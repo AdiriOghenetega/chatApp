@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     
   if(user){
-    const newSocket = io("https://chat-app-jqwf.vercel.app")
+    const newSocket = io("https://chatrooms-backend.onrender.com")
   setSocket(newSocket)
 }
 },[])
