@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app"
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAu_tjSetJg0T0LmS2cia2wHfh5bsmEUoo",
-    authDomain: "chatrooms-8ea1d.firebaseapp.com",
-    projectId: "chatrooms-8ea1d",
-    storageBucket: "chatrooms-8ea1d.appspot.com",
-    messagingSenderId: "787600061112",
-    appId: "1:787600061112:web:540934253044f9b123ba4d"
+    apiKey: import.meta.env.VITE_APP_API_KEY,
+    authDomain: import.meta.env.VITE_APP_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_APP_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_APP_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_APP_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_APP_APP_ID
   };
   
   // Initialize Firebase

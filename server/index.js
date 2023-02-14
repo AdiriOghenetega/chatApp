@@ -28,9 +28,10 @@ io.on("connection", (socket) => {
 
   socket.on("disconnect", () => {
     console.log("User Disconnected", socket.id);
+    socket.emit("Disconnected",socket.id)
   });
 });
 
 server.listen(3001, () => {
   console.log("SERVER RUNNING");
-});
+});  
