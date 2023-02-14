@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     
   if(user){
-    const newSocket = io("http://localhost:3001")
+    const newSocket = io("https://chat-app-jqwf.vercel.app")
   setSocket(newSocket)
 }
 },[])
