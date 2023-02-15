@@ -1,6 +1,6 @@
 import {useState,useEffect} from "react"
 import {
-  BrowserRouter, Routes, Route
+  Routes, Route
 } from "react-router-dom";
 import { Login,Chats } from "./pages";
 import { io, Socket } from "socket.io-client";
@@ -20,7 +20,7 @@ function App() {
     const newSocket = io("https://chatrooms-backend.onrender.com")
   setSocket(newSocket)
 }
-},[user])
+},[])
 
 
   return (

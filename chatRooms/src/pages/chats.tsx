@@ -23,7 +23,7 @@ const Chats = ({socket}:chatsProps) => {
   const [messageList, setMessageList] = useState<messageDataProps[]>([]);
   const [showChat, setShowChat] = useState(false);
   const user = useAuth()
-  const setRef = useRef< HTMLDivElement | null>(null)
+ 
  
 
 if(!user) return <h1>loading...</h1>
@@ -59,11 +59,11 @@ if(!user) return <h1>loading...</h1>
 
   useEffect(() => {
     socket?.on("Disconnected", (data) => {
-      console.log("User Disconnected", socket.id);
+      console.log("User Disconnected", data);
         setShowChat(false)
       
     });
-  }, [socket]);
+  }, [socket?.id]);
 
   const joinRoom = () => {
     if (user && room !== "") {
