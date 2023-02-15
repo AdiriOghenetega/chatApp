@@ -20,7 +20,7 @@ function App() {
     const newSocket = io("https://chatrooms-backend.onrender.com")
   setSocket(newSocket)
 }
-},[])
+},[user])
 
 
   return (
