@@ -37,12 +37,14 @@ export const AuthProvider = ({children}:childrenProps) => {
        setLoading(false);
        if(user){
          navigate("/chats");
+       }else{
+        navigate("/")
        }
      }
      )
       
       
-    }, [])
+    }, [navigate])
 
     
 
