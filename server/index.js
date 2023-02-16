@@ -1,12 +1,21 @@
 const express = require("express");
-const app = express();
 const http = require("http");
+const path = require("path");
+const cors = require("cors");
+const router = require('./router');
 const { Server } = require("socket.io");
 
-const cors = require("cors");
+const app = express();
 app.use(cors());
 
-const router = require('./router');
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "dist/index.html"), function (err) {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
+
 app.use(router);
 
 const PORT = process.env.PORT || 3001;

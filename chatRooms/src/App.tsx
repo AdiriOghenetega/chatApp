@@ -13,6 +13,7 @@ function App() {
   const [socket, setSocket] = useState<Socket | null>(null)
 
   const user = useAuth()
+  
 
   useEffect(() => {
     
@@ -28,6 +29,7 @@ function App() {
 <Routes>
 <Route  path='/' element={<Login />} />
 <Route  path='/chats' element={<Chats socket={socket} />} />
+<Route  path='/*' element={<Login />} />
 </Routes>
     </div>
     
