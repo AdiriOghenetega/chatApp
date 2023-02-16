@@ -25,7 +25,7 @@ function App() {
 
 
   return (
-    <div className="bg-gray-500 h-[88vh] ">
+    <div className="bg-gray-500 h-[87vh] sm:h-[100vh] ">
 <Routes>
 <Route  path='/' element={<Login />} />
 <Route  path='/chats' element={<Chats socket={socket} />} />
