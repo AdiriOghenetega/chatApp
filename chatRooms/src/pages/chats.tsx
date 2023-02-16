@@ -72,7 +72,7 @@ const Chats = ({ socket }: chatsProps) => {
       </div>
       {showChat ? (
         <div className="relative">
-          <div className="flex items-center p-2 shadow-xl font-black h-[40px] fixed w-full z-10 bg-gray-300 ">
+          <div className="flex items-center p-2 shadow-xl font-black h-[40px] w-full z-10 bg-gray-300 ">
             <button
               onClick={() => setShowChat(false)}
               className="bg-gray-100 py-1 px-2 rounded-lg flex flex-col items-center justify-center mr-2 text-xs"
@@ -84,7 +84,7 @@ const Chats = ({ socket }: chatsProps) => {
             </h1>
           </div>
           <div >
-            <ScrollToBottom className="w-full chatBoxHeight pt-10">
+            <ScrollToBottom className="w-full chatBoxHeight pt-10 ">
               {messageList.map((messageContent, index) => {
                 return (
                   <div
