@@ -9,7 +9,7 @@ const Login = () => {
   const googleprovider = new GoogleAuthProvider();
   const fbprovider = new FacebookAuthProvider()
   return (
-    <div className="h-screen login flex flex-col justify-center items-center" >
+    <div className="h-full login flex flex-col justify-center items-center" >
       <div className='bg-[rgb(255,255,255,.5)] w-72 h-52 p-[2em] rounded-[1em]'>
         <div>
           <h1 className='font-bold'>Welcome to chatRooms!</h1>
