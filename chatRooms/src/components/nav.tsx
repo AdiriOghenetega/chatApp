@@ -18,7 +18,7 @@ const Nav = () => {
     });
   }
   return (
-    <div className='bg-gray-100 flex w-full items-center justify-between p-[1em] shadow-xl fixed '>
+    <div className='bg-gray-100 flex w-full items-center justify-between p-[1em] shadow-xl '>
       <div className='flex items-center'>
         <GrChatOption size="25px"  />
         <h1 className='text-2xl font-black ml-2'>chatRooms</h1>
