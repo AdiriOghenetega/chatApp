@@ -15,7 +15,7 @@ animation : background 10s infinite alternate linear
 }
 
 .chatBoxHeight {
-    height : calc(87vh - 190px);
+    height : calc(86vh - 190px);
 }
 @media (min-width: 640px) {
     .chatBoxHeight {
