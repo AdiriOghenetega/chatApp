@@ -123,7 +123,7 @@ const Chats = ({ socket }: chatsProps) => {
           </div>
           <div className="border-t-2 border-gray-400 px-4 pt-4 pb-4 flex items-center justify-around h-[82px] ">
             <input
-              className="w-[90%] focus:outline-none focus:placeholder-gray-400 text-gray-600 placeholder-gray-600 pl-12 bg-gray-200 rounded-md py-3"
+              className="w-[75%] sm:w-[90%] focus:outline-none focus:placeholder-gray-400 text-gray-600 placeholder-gray-600 pl-4 bg-gray-200 rounded-md py-3"
               type="text"
               value={currentMessage}
               placeholder="Hey..."
